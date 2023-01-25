@@ -1,5 +1,6 @@
 package Beverage;
 
+//Clase de la que heredaran las otras bebidas y los decoradores
 public abstract class Beverage {
     protected String description;
 
@@ -7,5 +8,6 @@ public abstract class Beverage {
         return description;
     }
 
+    //Cada bebida tendrá su propia implementación de el metodo
     public abstract double cost ();
 }
