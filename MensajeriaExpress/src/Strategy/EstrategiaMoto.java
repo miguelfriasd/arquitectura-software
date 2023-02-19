@@ -1,6 +1,11 @@
 package Strategy;
 
+/**
+ * Clase encargada de calcular el servicio utilizando la estrategia Moto
+ * @author Miguel Frías
+ */
 public class EstrategiaMoto implements EstrategiaTransporte {
+    
     private static final double PRECIO_BASE = 15;
     private static final double VELOCIDAD_PROMEDIO = 45;
     private static final double PRECIO_POR_KM = 5;
@@ -10,6 +15,13 @@ public class EstrategiaMoto implements EstrategiaTransporte {
     private static final double PRECIO_SERVICIO_EXPRESS = 50;
     private static final double PRECIO_SERVICIO_ESTANDAR = 30;
 
+    /**
+     * Método utilizado para calcular el servicio
+     * @param tipoPaquete Tipo de paquete utilizado para calcular el servicio
+     * @param tipoServicio Tipo de servicio utilizado para calcular el servicio
+     * @param distancia Distancia indicada para calcular el servicio
+    */     
+    @Override
     public void calcularServicio(String tipoPaquete, String tipoServicio, double distancia) {
         double costo = PRECIO_BASE;
         
