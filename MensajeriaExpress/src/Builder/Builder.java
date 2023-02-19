@@ -2,10 +2,10 @@ package Builder;
 
 public interface Builder {
 
-    public Builder setTipoServicio(char tipoServicio);
+    public Builder setTipoServicio(String tipoServicio);
 
-    public Builder setTipoPaquete(char tipoPaquete);
+    public Builder setTipoPaquete(String tipoPaquete);
 
-    public Builder setDistancia(int distancia);
+    public Builder setDistancia(double distancia);
 
 }
